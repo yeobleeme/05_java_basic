@@ -1,0 +1,11 @@
+package com.lec.ex08_objectstream;
+
+public class ObjectStreamMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.lec.ex02_board;
+
+public class ConnectionFactory {
+	
+	private String path = ConnectionFactory.class.getResource("jdbc.properties").getPath();
+	
+	private String DRV = null;
+	private String URL = null;
+	private String USR = null;
+	private String PWD = null;
+
+}

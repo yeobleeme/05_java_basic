@@ -1,0 +1,11 @@
+package com.lec.ex01_basic;
+
+public class DeleteMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

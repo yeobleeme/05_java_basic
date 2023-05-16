@@ -1,0 +1,22 @@
+package com.lec.ex01_file;
+
+import java.nio.file.FileStore;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+
+public class FileSystemMain {
+
+	public static void main(String[] args) {
+		
+		// 2. FileSystem
+		// getFileStores() : 드라이브 경로를 가진 FileSystem객체를 리턴
+		// getRootDirectories() : root 디렉토리 정보
+		// getSeperator() : 디렉토리 구분자
+		
+		FileSystem fs = FileSystems.getDefault();
+		
+		for(FileStore store:fs.getFileStores())
+
+	}
+
+}

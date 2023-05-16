@@ -1,0 +1,8 @@
+<h1>EMPLOYEE</h1>
+<table border = "1";>
+<tr>
+<td>EMPNO</td>
+<td>ENAME</td>
+<td>JOB</td>
+</tr>
+</table>

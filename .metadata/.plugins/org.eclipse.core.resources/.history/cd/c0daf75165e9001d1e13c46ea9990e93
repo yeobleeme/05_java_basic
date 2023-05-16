@@ -1,0 +1,13 @@
+package com.lec.ex03_channel;
+
+public class FileChannelMain3 {
+
+	public static void main(String[] args) {
+		
+		// 1. copy() 메서드를 이용하지 않고 파일 복사
+		
+		// 2. copy() 메서드를 이용해 파일 복사
+
+	}
+
+}

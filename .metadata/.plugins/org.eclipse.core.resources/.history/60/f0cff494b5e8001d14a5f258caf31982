@@ -1,0 +1,19 @@
+package com.lec.ex07_auxstream;
+
+/*
+    프린트 보조스트림
+    
+    PrintStream과 PrintWriter는 프린터와 유사하게 출력하는 print(), println() 메서드를 가지고 있는
+    보조스트림이다. 우리가 빈번하게 사용했던 콘솔출력스트림인 System.out이 바로 PrintStream타입이기 때문에
+    print(), println() 메서드를 사용할 수 있다.
+*/
+
+public class PrintStreamMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

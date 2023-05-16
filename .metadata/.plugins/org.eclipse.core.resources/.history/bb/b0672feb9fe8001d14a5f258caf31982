@@ -1,0 +1,13 @@
+package com.lec.ex05_console;
+
+import java.io.InputStream;
+
+public class SystemInMain {
+
+	public static void main(String[] args) {
+		
+		InputStream is = System.in;
+
+	}
+
+}

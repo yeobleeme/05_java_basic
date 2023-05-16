@@ -1,0 +1,14 @@
+jdbc.drv=oracle.jdbc.OracleDriver
+jdbc.url=jdbc.oracle:thin:@localhost:1521:xe
+jdbc.usr=scott
+jdbc.pwd=TIGER
+
+insert=insert into board(bno, subject, writer, content) values(?,?,?,?);
+select=select * from board
+update=update board set subject=?, content=? where bno=?
+delete=delete from board where bno=?
+
+jdbc.oracle.drv=oracle.jdbc.OracleDriver
+jdbc.oracle.url=jdbc.oracle:thin:@localhost:1521:xe
+jdbc.oracle.usr=scott
+jdbc.oracle.pwd=TIGER

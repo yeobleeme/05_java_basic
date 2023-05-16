@@ -1,0 +1,11 @@
+package com.lec.ex02_buffer;
+
+public class PerformanceMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

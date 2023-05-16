@@ -1,0 +1,72 @@
+package com.lec.ex02_board;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class BoardDAOImpl implements BoardDAOService {
+
+	private BoardVO inputBoard() {
+		BoardVO board = new BoardVO();
+		
+		String subject = JOptionPane.showInputDialog("글제목을 입력하세요!");
+		String writer  = JOptionPane.showInputDialog("작성자를 입력하세요!");
+		String content = JOptionPane.showInputDialog("본문글을 입력하세요!");
+		
+		board.setSubject(subject);;
+		board.setWriter(writer);
+		board.setContent(content);
+		return board;
+	}
+	
+	@Override
+	public void createBoard() {
+		BoardVO board = inputBoard();
+		
+		ConnectionFactory cf = new ConnectionFactory();
+		Connection conn = cf.getConnection();
+		String sql = cf.getInsert();
+		
+		
+//		System.out.println(board.getSubject());
+//		System.out.println(board.getWriter());
+//		System.out.println(board.getContent());
+	}
+
+
+	@Override
+	public ArrayList<BoardVO> listBoard() {
+		System.out.println("글목록보기성공!!");
+		return null;
+	}
+
+	@Override
+	public BoardVO viewBoard(int bno) {
+		System.out.println("글조회성공!!");
+		return null;
+	}
+
+	@Override
+	public void updateBoard(int bno) {
+		System.out.println("글수정성공!!");
+	}
+
+	@Override
+	public void deleteBoard(int bno) {
+		System.out.println("글삭제성공!!");
+	}
+
+	@Override
+	public ArrayList<BoardVO> findBySubjectBoard(String subject) {
+		System.out.println("제목검색성공!!");
+		return null;
+	}
+
+	@Override
+	public ArrayList<BoardVO> findByWriterBoard(String writer) {
+		System.out.println("작성자검색성공!!");
+		return null;
+	}
+
+}

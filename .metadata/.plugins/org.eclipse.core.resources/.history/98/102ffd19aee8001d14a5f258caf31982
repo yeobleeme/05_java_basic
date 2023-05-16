@@ -1,0 +1,9 @@
+package com.lec.ex06_file;
+
+public class FileReaderMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

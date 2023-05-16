@@ -1,0 +1,16 @@
+package com.lec.ex01_basic;
+
+public class SelectJoinMain {
+
+	public static void main(String[] args) {
+		
+		// 부서명 출력하기 join
+		// select empno, ename, emp.deptno, dname
+		// from emp emp, dept dpt
+		// where emp.deptno = ?
+		// and emp.deptno = dpt.deptno;
+		// 사원번호, 사원이름, 부서번호, 부서이름
+
+	}
+
+}

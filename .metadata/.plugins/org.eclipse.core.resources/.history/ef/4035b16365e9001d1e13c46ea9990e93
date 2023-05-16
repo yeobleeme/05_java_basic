@@ -1,0 +1,19 @@
+package com.lec.ex03_channel;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileChannelMain3 {
+
+	public static void main(String[] args) {
+		
+		Path from = Paths.get("src/com/lec/ex02_buffer/ogimage.png");
+		
+		// 1. copy() 메서드를 이용하지 않고 파일 복사
+		
+		
+		// 2. copy() 메서드를 이용해 파일 복사
+
+	}
+
+}

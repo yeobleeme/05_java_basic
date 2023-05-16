@@ -1,0 +1,12 @@
+package com.lec.ex06_file;
+
+public class FileOutputStreamMain {
+
+	public static void main(String[] args) {
+		
+		String org = "src/com/lec/ex06_file/functionalinterface.png";
+		String new_img = "c:/Temp/functionalinterface_copy.png";
+
+	}
+
+}

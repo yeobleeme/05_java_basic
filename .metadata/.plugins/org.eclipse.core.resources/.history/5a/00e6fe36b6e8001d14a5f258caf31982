@@ -1,0 +1,11 @@
+package com.lec.ex07_auxstream;
+
+public class PrintFormatMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

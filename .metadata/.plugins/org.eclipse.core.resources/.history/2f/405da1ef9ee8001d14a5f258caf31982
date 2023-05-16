@@ -1,0 +1,11 @@
+package com.lec.ex04_writer;
+
+public class WriterMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

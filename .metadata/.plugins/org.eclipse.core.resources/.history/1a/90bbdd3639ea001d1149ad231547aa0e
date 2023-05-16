@@ -1,0 +1,60 @@
+package com.lec.ex01_basic;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+public class SelectJoinMain {
+	
+	final static String DRV = "oracle.jdbc.OracleDriver";
+	final static String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	final static String USR = "scott";
+	final static String PWD = "TIGER";
+	
+	static Connection conn = null;
+	static PreparedStatement pstmt = null;
+	static ResultSet rs = null;
+	
+	public static void main(String[] args) {
+		
+		try {
+			Class.forName(DRV);
+			conn = DriverManager.getConnection(URL, USR, PWD);
+			
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("부서번호 입력 => ");
+			int deptno = scanner.nextInt();
+			
+			String sql = "select deptno, dname"
+					   + " from emp e left join dept d"
+					   + " where e.deptno = d.deptno"
+					   + "on ";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt("deptno");
+			pstmt.setString("dname");
+			rs = pstmt.executeQuery();
+			
+			while(rs.next() == true) {
+				int deptno = rs.getInt("deptno");  // 1
+				String dname = rs.getString("dname");
+				System.out.println("deptno: " + deptno + ", dname: " + dname);
+			} 
+			
+		} catch (Exception e) {
+			System.out.println("DB connect failed");
+		} finally {
+			try {
+				if(rs != null) rs.close();
+				if(pstmt != null) pstmt.close();
+				if(conn != null) conn.close();
+			} catch (Exception e2) {
+				// dummy
+			}
+		}
+
+	}
+
+}

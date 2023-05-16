@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;java16.string&apos; to &apos;java16.stream&apos;" description="Rename resource &apos;java16.string&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/java16.string" name="java16.stream" stamp="1682655435993" updateReferences="true"/>
+</session>

@@ -1,0 +1,44 @@
+package com.lec.ex02_board;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.util.Properties;
+
+public class ConnectionFactory {
+	
+	private String path = ConnectionFactory.class.getResource("jdbc.properties").getPath();
+	
+	private String DRV = null;
+	private String URL = null;
+	private String USR = null;
+	private String PWD = null;
+	
+	private String insert = null;
+	private String select = null;
+	private String update = null;
+	private String delete = null;
+	
+	
+	public ConnectionFactory() throws Exception {
+		
+		setUp();
+	}
+
+	// setUp메서드는 jdbc.properties파일에서 DB접속정보와
+	// 실행할 SQL문을 프로그램의 변수로 읽어오기 위한 사용자정의 메서드
+	private void setUp() throws Exception {
+		
+		Properties p = new Properties();
+		path = URLDecoder.decode(path, "utf-8");
+	}
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+package com.lec.ex03_connector;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class JDBCConnector {
+	
+	public static Connection getConnection() {
+		
+		static String DRV = "oracle.jdbc.OracleDriver";
+		static String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+		static String USR = "scott";
+		static String PWD = "TIGER";
+		
+		return null;
+	}
+	
+	public static void close(Connection conn, Statement stmt, ResultSet rs) {}
+
+}

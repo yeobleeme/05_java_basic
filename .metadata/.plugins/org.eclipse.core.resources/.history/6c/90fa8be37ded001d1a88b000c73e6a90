@@ -1,0 +1,21 @@
+package exercise;
+
+public class MemberVO {
+	
+	private String member_id;
+	private String member_pw;
+	private String member_name;
+	private int member_age;
+	private String member_gender;
+	private String member_email;
+	
+	public MemberVO() {
+		this.member_id = null;
+		this.member_pw = null;
+		this.member_name = null;
+		this.member_age = 0;
+		this.member_gender = null;
+		this.member_email = null;
+	}
+
+}

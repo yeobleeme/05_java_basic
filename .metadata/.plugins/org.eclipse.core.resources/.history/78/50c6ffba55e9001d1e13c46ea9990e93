@@ -1,0 +1,15 @@
+package com.lec.ex01_file;
+
+/*
+    NIO: New Input Output
+*/
+
+public class NIOMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

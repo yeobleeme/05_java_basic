@@ -1,0 +1,11 @@
+package com.lec.ex07_auxstream;
+
+public class BufferedOutputStreamMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.lec.ex06_file;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class FileOutputStreamMain {
+
+	public static void main(String[] args) throws Exception {
+		
+		String org_img = "src/com/lec/ex06_file/functionalinterface.png";
+		String new_img = "c:/Temp/functionalinterface_copy.png";
+		
+		FileInputStream fis = new FileInputStream(org_img);
+		FileInputStream fos = new FileInputStream(new_img);
+
+	}
+
+}

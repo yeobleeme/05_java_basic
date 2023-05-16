@@ -1,0 +1,11 @@
+package com.lec.ex06_file;
+
+public class FileWriterMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

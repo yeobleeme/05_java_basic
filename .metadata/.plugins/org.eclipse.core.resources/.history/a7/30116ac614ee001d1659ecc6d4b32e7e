@@ -1,0 +1,20 @@
+package com.lec.ex03_connector;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class MyDBConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn = JDBCConnector.getConnection();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		pstmt = conn.prepareStatement("select * from board");
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.lec.ex01_basic;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class SelectOneMain {
+	
+	final static String DRV = "oracle.jdbc.OracleDriver";
+	final static String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	final static String USR = "scott";
+	final static String PWD = "TIGER";
+	
+	static Connection conn = null;  // Connection객체 생성
+	static Statement stmt = null;
+	static ResultSet rs = null;
+	
+	public static void main(String[] args) {
+
+	}
+
+}

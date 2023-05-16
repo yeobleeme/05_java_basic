@@ -1,0 +1,48 @@
+package com.lec.ex08_objectstream;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class SerializableMain {
+
+	public static void main(String[] args) throws Exception {
+		
+		// 1. 객체의 직렬화null
+		FileOutputStream fos = new FileOutputStream("src/com/lec/ex08_objectstream/student.dat");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		
+		
+		
+		
+		// 2. 객체의 역직렬화
+		
+
+	}
+
+}
+
+
+class ClassA implements Serializable {
+	
+	// 1. 직렬화에 포함
+	int field1;
+	ClassB field2 = new ClassB();
+	
+	// 2. 직렬화에 불포함
+	static int field3; 
+	transient int field4;
+	
+	public ClassA() {}
+	public void method() {}
+	
+} 
+
+class ClassB implements Serializable {
+	int field1;
+}
+
+
+
+

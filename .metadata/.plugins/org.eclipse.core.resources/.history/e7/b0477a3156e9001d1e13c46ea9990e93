@@ -1,0 +1,18 @@
+package com.lec.ex01_file;
+
+/*
+    NIO: New Input Output
+    
+    자바4 부터 새로운 입출력이라는 뜻에서 java.nio 패키지에 포함되었다.
+    
+*/
+
+public class NIOMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.lec.ex03_connector;
+
+public class MyDBConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn = JDBCConnector
+
+	}
+
+}

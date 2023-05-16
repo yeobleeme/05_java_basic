@@ -1,0 +1,7 @@
+package com.lec.ex02_board;
+
+public class ConnectionFactory {
+	
+	private String path = 
+
+}

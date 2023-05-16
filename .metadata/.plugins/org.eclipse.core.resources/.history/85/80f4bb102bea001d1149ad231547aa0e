@@ -1,0 +1,58 @@
+package com.lec.ex01_basic;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class SelectManyMain {
+	
+	final static String DRV = "oracle.jdbc.OracleDriver";
+	final static String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	final static String USR = "scott";
+	final static String PWD = "TIGER";
+	
+	static Connection conn = null;
+	static Statement stmt = null;
+	static ResultSet rs = null;
+
+	public static void main(String[] args) {
+		
+		// select * from emp where empno >=? 
+		// ? = 7000
+		// while(rs.next() {...})
+
+		try {
+			Class.forName(DRV);
+			conn = DriverManager.getConnection(URL, USR, PWD);
+			
+			String sql = "select * from emp where empno >= 7000";
+			int row = 0;
+	
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			
+			if(rs.next()) {
+				int empno = rs.getInt("empno");
+				String ename = rs.getString("ename");
+				System.out.println("empno: " + empno + ", ename: " + ename);
+			} else {
+				System.out.println("data not founded");
+			}
+			
+		} catch (Exception e) {
+			System.out.println("DB connect failed");
+		} finally {
+			try {
+				if(rs != null) rs.close();
+				if(stmt != null) stmt.close();
+				if(conn != null) conn.close();
+			} catch (Exception e2) {
+				// dummy
+			}
+		}
+
+	}
+
+}
+

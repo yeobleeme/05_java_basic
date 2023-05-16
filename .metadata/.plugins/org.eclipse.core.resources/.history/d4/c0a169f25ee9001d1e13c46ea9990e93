@@ -1,0 +1,16 @@
+package com.lec.ex02_buffer;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class PerformanceMain {
+
+	public static void main(String[] args) {
+		
+		Path from = Paths.get("src/com/lec/ex02_buffer/ogimage.png");
+		Path to1 = Paths.get("src/com/lec/ex02_buffer/ogimage_01.png");
+		Path to2 = Paths.get("src/com/lec/ex02_buffer/ogimage_02.png");
+
+	}
+
+}

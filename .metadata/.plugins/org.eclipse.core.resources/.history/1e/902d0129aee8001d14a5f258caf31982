@@ -1,0 +1,14 @@
+package com.lec.ex06_file;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class FileReaderMain {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileReader fr = new FileReader("src/com/lec/ex06_file/FileMain.java");
+
+	}
+
+}

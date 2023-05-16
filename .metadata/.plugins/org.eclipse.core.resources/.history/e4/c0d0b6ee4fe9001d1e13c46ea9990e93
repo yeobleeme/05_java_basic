@@ -1,0 +1,11 @@
+package com.lec.ex08_objectstream;
+
+public class SerializableMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

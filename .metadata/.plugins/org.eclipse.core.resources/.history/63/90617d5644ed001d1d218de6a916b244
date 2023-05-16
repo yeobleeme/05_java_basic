@@ -1,0 +1,14 @@
+package com.lec.ex02_board;
+
+import java.util.List;
+
+public interface BoardDAOService {
+	
+	void createBoard();  // 글쓰기
+	List<BoardVO> listBoard();  // 글목록
+	BoardVO viewBoard(int bno);  // 글조회
+	void updateBoard(int bno);  // 글수정
+	void deleteBoard(int bno);  // 글수정
+	
+
+}

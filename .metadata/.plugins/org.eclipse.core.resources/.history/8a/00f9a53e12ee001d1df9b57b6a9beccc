@@ -1,0 +1,15 @@
+package com.lec.ex03_connector;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class JDBCConnector {
+	
+	public static Connection getConnection() {
+		return null;
+	}
+	
+	public static void close(Connection conn, Statement stmt, ResultSet rs) {}
+
+}

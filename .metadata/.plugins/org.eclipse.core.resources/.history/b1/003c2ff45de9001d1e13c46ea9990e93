@@ -1,0 +1,16 @@
+package com.lec.ex02_buffer;
+
+/*
+    NIO에서는 데이터를 입출력하려면 항상 버퍼를 사용해야 한다.
+    Buffer의 종류는 어떤 메모리를 사용하느냐에 따라 Direct와 NonDirect로 구분된다.
+*/
+
+public class BufferMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package exercise;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Java02_ex01
+		int x = 10;
+		int y = 20;
+		int z=(++x) + (y--);
+		System.out.println(z);  // 11 + 20 = 31
+
+	}
+
+}

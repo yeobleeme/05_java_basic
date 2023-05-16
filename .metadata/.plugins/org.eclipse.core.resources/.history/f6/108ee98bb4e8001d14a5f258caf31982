@@ -1,0 +1,27 @@
+package com.lec.ex07_auxstream;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class BufferedOutputStreamMain {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		BufferedInputStream bis = null;
+		BufferedOutputStream bos = null;
+		
+		long start, end;
+		
+		// 1. non buffer
+		fis = new FileInputStream("src/com/lec/ex06_file/functionalInterface.png");
+		
+		// 2. buffer
+
+	}
+
+}

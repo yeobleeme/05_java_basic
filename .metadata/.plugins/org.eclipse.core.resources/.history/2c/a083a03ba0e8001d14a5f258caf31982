@@ -1,0 +1,11 @@
+package com.lec.ex05_console;
+
+public class SystemOutMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

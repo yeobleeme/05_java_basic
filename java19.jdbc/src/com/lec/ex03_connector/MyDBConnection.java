@@ -1,0 +1,41 @@
+package com.lec.ex03_connector;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.lec.ex02_board.BoardVO;
+
+public class MyDBConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn = JDBCConnector.getConnection();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			pstmt = conn.prepareStatement("select * from board");
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				BoardVO vo = new BoardVO();
+				vo.setBno(rs.getInt(1));
+				vo.setSubject(rs.getNString("subject"));
+				vo.setWriter(rs.getString("writer"));
+				vo.setContent(rs.getString("content"));
+				System.out.println(vo.toString());
+			}
+			
+		} catch (Exception e) {
+			System.out.println("DB connection failed");
+			e.printStackTrace();
+		} finally {
+			JDBCConnector.close(conn, pstmt, rs);
+		}
+		
+
+	}
+
+}

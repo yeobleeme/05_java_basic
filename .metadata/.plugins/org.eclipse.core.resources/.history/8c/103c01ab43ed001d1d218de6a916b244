@@ -1,0 +1,9 @@
+package com.lec.ex02_board;
+
+public interface BoardDAOService {
+	
+	void createBoard();  // 글쓰기
+	listBoard();  // 글목록
+	
+
+}

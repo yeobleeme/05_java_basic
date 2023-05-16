@@ -1,0 +1,26 @@
+package com.lec.ex08_objectstream;
+
+import java.io.Serializable;
+
+public class SerializableMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
+
+
+class ClassA implements Serializable {
+	
+	// 1. 직렬화에 포함
+	int field1;
+	ClassB field2 = new ClassB();
+	
+	// 2. 직렬화에 불포함
+} 
+
+
+

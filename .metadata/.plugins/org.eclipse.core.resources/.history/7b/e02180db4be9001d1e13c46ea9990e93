@@ -1,0 +1,25 @@
+package com.lec.ex08_objectstream;
+
+public class ObjectStreamMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
+
+
+class Student {
+	
+	private String name; 
+	private int sno;
+	private String gender;
+	
+	public Student(String name, int sno) {
+	}
+}
+
+
+

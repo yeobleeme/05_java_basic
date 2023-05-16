@@ -1,0 +1,19 @@
+package com.lec.ex02_output;
+
+/*
+    OutputStream
+    
+    OutputStream은 바이트 기반 출력스트림의 최상위 추상클래스이다.
+    모든 바이트 기반 출력스트림 
+    FileOutputStream, PrintOutputStream, BufferedOutputStream, DataOutputStream을 상속 받는다.
+*/
+
+public class WriteMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

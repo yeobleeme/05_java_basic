@@ -1,0 +1,11 @@
+package com.lec.ex01_basic;
+
+public class SelectEmployeeMain {
+
+	public static void main(String[] args) {
+		// select * from emp;
+		// employee.html 파일로 저장
+
+	}
+
+}

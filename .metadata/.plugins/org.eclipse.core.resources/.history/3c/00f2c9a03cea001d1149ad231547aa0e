@@ -1,0 +1,13 @@
+package com.lec.ex01_basic;
+
+public class SelectEmployeeMain {
+
+	public static void main(String[] args) {
+		// select empno, ename, job from emp;
+		// 사원정보를 employee.html 파일로 저장
+		// table태그로 출력
+		
+
+	}
+
+}

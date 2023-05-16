@@ -1,0 +1,14 @@
+package com.lec.ex04_writer;
+
+import java.io.FileReader;
+import java.io.Writer;
+
+public class WriterMain {
+
+	public static void main(String[] args) {
+		
+		Writer writer = new FileReader("src/com/lec/ex04_writer/text1.txt");
+
+	}
+
+}

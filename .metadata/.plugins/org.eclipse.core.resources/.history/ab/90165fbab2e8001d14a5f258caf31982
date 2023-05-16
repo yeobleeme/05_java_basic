@@ -1,0 +1,11 @@
+package com.lec.ex07_auxstream;
+
+public class OutputStreamWriterMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

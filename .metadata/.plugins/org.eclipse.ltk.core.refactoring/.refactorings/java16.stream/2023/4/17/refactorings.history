@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.lec.ex01_intro.PararellMain&apos; to &apos;ParallelMain&apos;&#x0D;&#x0A;- Original project: &apos;java16.stream&apos;&#x0D;&#x0A;- Original element: &apos;com.lec.ex01_intro.PararellMain&apos;&#x0D;&#x0A;- Renamed element: &apos;com.lec.ex01_intro.ParallelMain&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PararellMain&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.lec.ex01_intro{PararellMain.java[PararellMain" matchStrategy="1" name="ParallelMain" qualified="false" references="true" similarDeclarations="false" stamp="1682661456432" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+package com.lec.ex03_connector;
+
+import java.sql.Connection;
+
+public class MyDBConnection {
+
+	public static void main(String[] args) {
+		
+		Connection conn = JDBCConnector.getConnection();
+		
+
+	}
+
+}

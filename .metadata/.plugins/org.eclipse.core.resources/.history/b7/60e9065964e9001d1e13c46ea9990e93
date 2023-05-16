@@ -1,0 +1,14 @@
+package com.lec.ex03_channel;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileChannelMain2 {
+
+	public static void main(String[] args) {
+
+		Path path = Paths.get("c:/Temp/한숨.txt");
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.lec.ex03_channel;
+
+import java.io.IOException;
+import java.nio.channels.FileChannel;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+public class FileChannelMain2 {
+
+	public static void main(String[] args) throws Exception {
+
+		Path path = Paths.get("c:/Temp/한숨.txt");
+		
+		// 1. FileChannel 생성
+		FileChannel fc = FileChannel.open(path, StandardOpenOption.READ);
+		
+		// 2. 파일 읽기
+		
+		
+		// 3. 닫기
+		
+		
+		
+	}
+
+}

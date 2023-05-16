@@ -1,0 +1,25 @@
+package com.lec.ex01_file;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileMain {
+
+	public static void main(String[] args) {
+		
+		// 3. 파일 속성 읽기 및 파일, 디렉토리 생성/삭제
+		
+		Path path = Paths.get("src/com/lec/ex01_file/FileMain.java");
+		System.out.println("[디렉토리여부]\t" + Files.isDirectory(path));
+		System.out.println("[파일여부]\t" + Files.isDirectory(path));
+		System.out.println("[마지막수정일시]\t" + Files.isDirectory(path));
+		System.out.println("[파일크기]\t" + Files.isDirectory(path));
+		System.out.println("[소유자]\t" + Files.isDirectory(path));
+		System.out.println("[숨김파일]\t" + Files.isDirectory(path));
+		System.out.println("[읽기가능]\t" + Files.isDirectory(path));
+		System.out.println("[쓰기가능]\t" + Files.isDirectory(path));
+
+	}
+
+}

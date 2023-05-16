@@ -1,0 +1,13 @@
+package com.lec.ex09_network;
+
+import java.net.InetAddress;
+
+public class IpAdressMain {
+
+	public static void main(String[] args) {
+		
+		InetAddress
+
+	}
+
+}

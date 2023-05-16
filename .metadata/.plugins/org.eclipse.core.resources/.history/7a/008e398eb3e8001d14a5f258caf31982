@@ -1,0 +1,20 @@
+package com.lec.ex07_auxstream;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class BufferedInputStreamMain {
+
+	public static void main(String[] args) throws Exception {
+		
+		long start, end;
+		
+		// 1. non buffer
+		FileInputStream fis1 = new FileInputStream("src/com/lec/ex06_file/functionalInterface.png");
+		start = System.currentTimeMillis();
+		
+		// 2. buffer
+
+	}
+
+}

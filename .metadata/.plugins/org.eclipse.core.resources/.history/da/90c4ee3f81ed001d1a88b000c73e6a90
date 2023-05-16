@@ -1,0 +1,187 @@
+package exercise;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+public class MemberMenu {
+	
+	private double ver;
+	
+	public MemberMenu(double ver) {
+		this.ver = ver;
+	}
+	
+public void mainMenu() throws Exception {
+		
+		MemberDAOImpl bddao = MemberFactory.getInstance();
+		
+		while(true) {
+			mainMenuText();
+			
+			InputStreamReader isr = new InputStreamReader(System.in);
+			BufferedReader br = new BufferedReader(isr);
+			
+			switch((char)br.read()) {
+			case '1': bddao.createMember(); break;
+			case '2': bddao.listMember(); break;
+			case '3': bddao.viewMember(); break;
+			case '4': bddao.updateMember(); break;
+			case '5': bddao.deleteMember(); break;
+			case '6': bddao.findByNameMember(null); break;
+			case '7': bddao.findByEmailMember(null); break;
+			case '0': System.out.println("프로그램종료!!"); System.exit(0);
+			}
+		}
+	}
+
+
+	public void mainMenuText() {
+	
+		StringBuffer sb = new StringBuffer();
+		sb.append("***** 회원관리 프로그램 V" + ver + "*****\n");
+		sb.append("1. 신규회원 등록\n");
+		sb.append("2. 전체회원 조회\n");
+		sb.append("3. 회원상세 조회\n");
+		sb.append("4. 회원정보 수정\n");
+		sb.append("5. 회원정보 삭제\n");
+		sb.append("6. 이름으로 회원 조회\n");
+		sb.append("7. 이메일로 회원 조회\n");
+		sb.append("0. 종료\n");
+		sb.append("===========================\n");
+		sb.append("처리할 작업번호를 입력하세요");
+		System.out.println(sb.toString());		
+	}
+
+	public void mainMemberMenu() {
+		MemberDAOImpl mbdao = MemberFactory.getInstance();
+		
+		while(true) {
+			int menuNo = mainMenuUi();
+			
+			switch(menuNo) {
+			case 1: makeMember(mbdao); break;
+			case 2: listMember(mbdao); break;
+			case 3: memberView(mbdao); break;
+			case 4: updateMember(mbdao); break;
+			case 5: deleteMember(mbdao); break;
+			case 6: findByName(mbdao); break;
+			case 7: findByEmail(mbdao); break;
+			case 0: System.out.println("프로그램종료!!"); System.exit(0);
+			}			
+		}
+		
+	}
+	
+
+	private void findByName(MemberDAOImpl mbdao) {
+		String member_name = JOptionPane.showInputDialog("조회할 회원의 이름을 입력하세요.");
+		ArrayList<MemberVO> members = mbdao.findByNameMember(member_name);
+
+		
+		System.out.println("====================================================");
+		System.out.println("ID\t\tPW\t\tNAME\t\tAGE\t\tGENDER\t\tEMAIL");
+		System.out.println("====================================================");
+		
+		for(MemberVO member:members) {
+			System.out.println(member.toString());
+		}
+		System.out.println();
+		System.out.println("------- 회원 목록 출력 종료 --------\n\n");
+	}
+	
+
+	private void findByEmail(MemberDAOImpl mbdao) {
+		String member_email = JOptionPane.showInputDialog("조회할 회원의 이메일을 입력하세요!!");				
+		ArrayList<MemberVO> members = mbdao.findByEmailMember(member_email);
+		
+		System.out.println("====================================================");
+		System.out.println("ID\t\tPW\t\tNAME\t\tAGE\t\tGENDER\t\tEMAIL");
+		System.out.println("====================================================");
+		
+		for(BoardVO board:boards) {
+			System.out.println(board.toString());
+		}
+		System.out.println("------- 게시글목록 출력 종료 --------\n\n");		
+	}
+
+	
+	private void deleteBoard(BoardDAOImpl bddao) {
+		String bno = JOptionPane.showInputDialog("삭제할 글번호를 입력하세요.");
+		String sql = "delete from board where bno =?";
+		
+		if((bno == null) || (bno.equals(""))) {
+			return;
+		} else {
+			bddao.deleteBoard(Integer.parseInt(bno));
+		}
+	}
+
+	
+	private void updateBoard(BoardDAOImpl bddao) {
+		String bno = JOptionPane.showInputDialog("수정할 글번호를 입력하세요.");
+		
+		if((bno == null) || (bno.equals(""))) {
+			return;
+		} else {
+			bddao.updateBoard(Integer.parseInt(bno));
+		}
+		
+	}
+
+	
+	private void contentView(BoardDAOImpl bddao) {
+		String bno = JOptionPane.showInputDialog("조회할 글번호를 입력하세요.");
+		
+		if((bno == null) || (bno.equals(""))) {
+			return;
+		} else {
+			BoardVO board = bddao.viewBoard(Integer.parseInt(bno));
+			System.out.println("글제목: " + board.getSubject());
+			System.out.println("작성자: " + board.getWriter());
+			System.out.println("글내용: " + board.getContent());
+		}
+	}
+	
+
+	private void listBoard(BoardDAOImpl bddao) {
+		ArrayList<BoardVO> boards = bddao.listBoard();	
+		System.out.println("====================================================");
+		System.out.println("글번호\t\t제목\t\t작성자\t\t내용");
+		System.out.println("====================================================");
+		
+		for(BoardVO board:boards) {
+			System.out.println(board.toString());
+		}
+		System.out.println();
+		System.out.println("------- 게시글목록 출력 종료 --------\n\n");
+	}
+
+	
+	private void makeBoard(BoardDAOImpl bddao) {
+		bddao.createBoard();		
+	}
+
+	
+	private int mainMenuUi() {
+		String menuNo = JOptionPane.showInputDialog(
+			"===== 게시판관리프로그램 V1.0 =====\n\n" +
+			"1. 새로운 글쓰기\n" + 
+			"2. 전체글 목록 조회\n" + 
+			"3. 본문글 보기\n" + 
+			"4. 본문글 수정\n" + 
+			"5. 본문글 삭제\n" + 
+			"6. 제목으로 게시글 조회\n" + 
+			"7. 작성자로 게시글 조회\n" + 
+			"0. 종료\n\n" + 
+			"처리할 작업번호를 입력하세요"
+		);
+		if((menuNo == null) || (menuNo.equals(""))) {
+			return 0;
+		} else {
+			return Integer.parseInt(menuNo);			
+		}
+		
+	}
+}

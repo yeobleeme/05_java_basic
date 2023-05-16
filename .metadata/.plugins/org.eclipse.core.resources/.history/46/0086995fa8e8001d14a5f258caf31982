@@ -1,0 +1,21 @@
+package com.lec.ex06_file;
+
+/*
+    파일 입출력
+    
+    File 클래스
+    
+    IO패키지에서 제공하는 File클래스는 파일크기, 속성, 이름 등의 정보를 읽는 기능과
+    파일 생성/삭제 등 관련 기능을 제공한다. 또한, 디렉토리를 생성하고 
+    디렉토리에 있는 파일목록을 읽는 기능도 제공한다. 
+*/
+
+public class FileMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

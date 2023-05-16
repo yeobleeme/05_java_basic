@@ -1,0 +1,14 @@
+package exercise;
+
+// 커맨드라인으로부터 파일명과 숫자를 입력받아서, 
+// 입력받은 파일의 내용의 처음부터 입력받은 숫자만큼의 라인을 
+// 출력하는 프로그램(FileHead.java)을 작성하라.
+// ([Hint] BufferedReader의 readLine( )을 사용하라.)
+
+public class Exercise15_1 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

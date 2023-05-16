@@ -1,0 +1,19 @@
+package com.lec.ex01_input;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+public class ReadMain3 {
+
+	public static void main(String[] args) throws Exception {
+		
+		InputStream is = new FileInputStream("src/com/lec/ex01_input/news.txt");
+		int readByte;
+		byte[] readBytes = new byte[3];
+		
+		readByteNo = is.read(readBytes, 2, 3);
+
+	}
+
+}

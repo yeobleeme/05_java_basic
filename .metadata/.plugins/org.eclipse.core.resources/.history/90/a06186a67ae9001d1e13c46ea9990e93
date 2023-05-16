@@ -1,0 +1,13 @@
+package exercise;
+
+// 다음은 콘솔 명령어 중에서 디렉토리를 변경하는 cd명령을 구현한 것이다. 
+// 알맞은 코드를 넣어 cd( )를 완성하시오.
+
+public class Exercise15_6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

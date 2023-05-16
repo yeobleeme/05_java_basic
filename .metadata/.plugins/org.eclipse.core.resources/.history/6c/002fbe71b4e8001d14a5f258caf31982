@@ -1,0 +1,21 @@
+package com.lec.ex07_auxstream;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class BufferedOutputStreamMain {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		BufferedInputStream bis = null;
+		BufferedOutputStream bos = null;
+		
+		long start, end;
+
+	}
+
+}

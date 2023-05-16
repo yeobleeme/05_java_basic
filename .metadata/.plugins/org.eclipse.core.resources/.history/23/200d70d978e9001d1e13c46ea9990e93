@@ -1,0 +1,15 @@
+package exercise;
+
+// 커맨드라인으로부터 여러 파일의 이름을 입력받고, 
+// 이 파일들을 순서대로 합쳐서 새로운 파일을 만들어내는 프로그램(FileMergeTest.java)을 작성하시오. 
+// 단, 합칠 파일의 개수에는 제한을 두지 않는다.
+
+public class FileMergeTest {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
