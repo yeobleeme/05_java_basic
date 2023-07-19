@@ -9,7 +9,7 @@ public class FileMain {
 
 	public static void main(String[] args) throws Exception {
 		
-		// 3. 파일 속성 읽기 및 파일, 디렉토리 생성/삭제
+		// 3. 파일 속성 읽기 및 파일, 디렉토리 생성/삭제 
 		
 		Path path = Paths.get("src/com/lec/ex01_file/FileMain.java");
 		System.out.println("[디렉토리여부]\t" + Files.isDirectory(path));
