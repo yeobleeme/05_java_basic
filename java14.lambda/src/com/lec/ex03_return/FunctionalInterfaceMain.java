@@ -16,7 +16,7 @@ public class FunctionalInterfaceMain {
 		fi = (a, b) -> { return a + b; };
 		System.out.println("fi.add(20, 10) = " + fi.mymethod(20, 10));
 		
-		// 매개변수가 한 개 이상일 경우 소괄호 생략 불가
+		// 매개변수가 한 개 이상일 경우 소괄호 생략 불가 
 		// return문이 있을 경우 실행문이 하나여도 중괄호 생략 불가
 		// 대신 return문을 생략할 수 있음
 		fi = (a, b) ->  a + b; 
