@@ -17,7 +17,7 @@ public class MultiCatchMain {
 			Class _class = Class.forName("java.lang.Stringxxx");
 			
 //		} catch (ArrayIndexOutOfBoundsException e) {
-//			System.out.println("args.length = " + args.length + " 실행 매개변수가 부족합니다.");
+//			System.out.println("args.length = " + args.length + " 실행 매개변수가 부족합니다..");
 //			
 //		}  catch (NumberFormatException e) {
 //			System.out.println(data1 + " 또는 " + data2 + " 는 숫자로 변환할 수 없습니다.");
