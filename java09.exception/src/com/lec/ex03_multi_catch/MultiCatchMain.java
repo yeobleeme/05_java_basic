@@ -20,7 +20,7 @@ public class MultiCatchMain {
 //			System.out.println("args.length = " + args.length + " 실행 매개변수가 부족합니다..");
 //			
 //		}  catch (NumberFormatException e) {
-//			System.out.println(data1 + " 또는 " + data2 + " 는 숫자로 변환할 수 없습니다.");
+//			System.out.println(data1 + " 또는 " + data2 + " 는 숫자로 변환할 수 없습니다..");
 			
 		}  catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
 			System.out.println("인덱스예외 or 숫자변환 예외 발생");
