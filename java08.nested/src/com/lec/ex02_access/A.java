@@ -7,7 +7,7 @@ public class A {
 	void a_method1() {}
 	static void a_method2() {}
 	
-	// 1. 객체중첩클래스 - 객체멤버, 정적멤버 모두 접근가능
+	// 1. 객체중첩클래스 - 객체멤버, 정적멤버 모두 접근가능 
 	class B {
 		
 		void b_method() {
