@@ -31,7 +31,7 @@ public class FunctionalInterfaceMain {
 		fi = (a, b) -> a / b; 
 		System.out.println("fi.add(30, 10) = " + fi.mymethod(30, 10));
 
-		// 람다식에 함수를 정의
+		// 람다식에 함수를 정의 
 		fi = (x, y) -> (int) div(10, 0);
 		System.out.println("10/0 = " + fi.mymethod(10, 0));
 		
