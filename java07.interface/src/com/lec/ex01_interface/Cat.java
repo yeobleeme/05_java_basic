@@ -10,7 +10,7 @@ public class Cat implements Animal {
 	
 //	@Override
 //	public void breath() {
-//		System.out.println("숨을 쉽니다.");
+//		System.out.println("숨을 쉽니다..");
 //		
 //	}
 
