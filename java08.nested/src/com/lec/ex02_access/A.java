@@ -19,7 +19,7 @@ public class A {
 		}
 	}
 	
-	// 2. 정적중첩클래스 - 정적멤버만 접근가능
+	// 2. 정적중첩클래스 - 정적멤버만 접근가능 
 	static class C {
 		
 		void c_method() {
