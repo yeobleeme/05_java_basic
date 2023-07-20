@@ -10,7 +10,7 @@ import java.util.Properties;
     
     Properties는 HashTable의 하위 클래스이기 때문에 HashTable의 모든 속성을 그대로 갖고있다. 
     차이점은 HashTable은 키와 값에 다양한 참조타입으로 정의할 수 있지만 Properties는 키와 값의
-    참조타입이 오직 String으로 제한된 Map컬렉션이다.
+    참조타입이 오직 String으로 제한된 Map컬렉션이다. 
     
     Properties는 애플리케이션의 옵션정보, 데이터베이스의 연결정보, 국제화(다국어)정보가 
     제공된 프로퍼티파일을 읽을 때 주로 사용한다.
