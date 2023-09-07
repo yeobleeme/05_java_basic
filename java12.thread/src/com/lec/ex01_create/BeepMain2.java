@@ -6,7 +6,7 @@ public class BeepMain2 {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		// Thread객체를 만드는 방법 
+		// Thread객체를 만드는 방법
 		// 1. 외부에 클래스 생성(BeepTask1, Runnable구현)
 	
 		// 소리 출력
