@@ -15,7 +15,7 @@ public class BeepTask1 implements Runnable {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
-			} // 0.5초간 정지
+			} // 0.5초간 정지 
 		}
 		
 	}
