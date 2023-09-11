@@ -7,7 +7,7 @@ package exercise;
 
 //  [실행결과]
 //  [타짜]5, 9 1004
-//  [고수]1, 1K 3010 
+//  [고수]1, 1K 3010
 
 import java.util.*;
 
