@@ -24,7 +24,7 @@ import java.nio.file.StandardOpenOption;
     
     2. 파일 읽기와 쓰기
     
-       파일에 바이트데이터를 쓰려면 FileChannel.write() 메서드를 호출한다. 매개값을 ByteBuffer객체를 
+       파일에 바이트데이터를 쓰려면 FileChannel.write() 메서드를 호출한다. 매개값을 ByteBuffer객체를
        전달하는데 파일에 쓰여지는 바이트는 ByteBuffer의 position에서 limit까지 이다.
        position은 0이고 limit가 capacity와 동일하다면 모든 바이트 데이터가 파일에 쓰여지게 된다.
        
