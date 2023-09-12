@@ -15,7 +15,7 @@ public class FunctionalInterfaceMain {
 		
 		fi = (int a) -> { System.out.println("fi의 매개변수 a = " + a); };
 		fi.method(20);
-//		fi.method("문자열");  // (x)
+//		fi.method("문자열");  // (x) 
 		
 		fi = (a) -> { System.out.println("fi의 매개변수 a = " + a); };
 		fi.method(30);
