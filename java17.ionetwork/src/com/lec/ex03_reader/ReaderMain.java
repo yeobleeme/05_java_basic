@@ -10,7 +10,7 @@ import java.io.Reader;
     Reader는 문자 기반의 입력스트림의 최상위 클래스이다. 문자기반 입력스트림
     FileReader, BufferedReader, InputStreamReader 모두 Reader클래스를 상속 받는다.
     
-    Reader클래스의 주요 메서드는
+    Reader클래스의 주요 메서드는 
     
     1. read() : 입력스트림으로 부터 한 개의 문자를 읽고 리턴
     2. read(char[] c) : 읽은 문자를 문자배열 c에 저장하고 실제 읽은 문자를 리턴
