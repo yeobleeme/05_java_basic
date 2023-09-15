@@ -2,7 +2,7 @@ package com.lec.ex04_member;
 
 class UsingThis {
 	
-	int outfield = 10;  // 클래스멤버
+	int outfield = 10;  // 클래스멤버 
 	
 	public class Inner {
 		int innerfield = 20;  // 객체(로컬)멤버
