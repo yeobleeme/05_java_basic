@@ -16,7 +16,7 @@ public class FileChannelMain3 {
 		Path from = Paths.get("src/com/lec/ex02_buffer/ogimage.png");
 		Path to = Paths.get("c:/Temp/ogiimage.png");
 		
-		// 1. copy() 메서드를 이용하지 않고 파일 복사 
+		// 1. copy() 메서드를 이용하지 않고 파일 복사
 		// a. 파일 읽기
 		FileChannel fc_fr = FileChannel.open(from, StandardOpenOption.READ);
 		
