@@ -11,7 +11,7 @@ import java.nio.file.StandardOpenOption;
     File Channel
     
     java.nio.channel.FileChannel 클래스를 이용하면 파일 읽기와 쓰기를 할 수 있다.
-    FileChannel은 동기화 처리가 되어있기 때문에 멀티쓰레드환경에서 사용해도 안전하다. 
+    FileChannel은 동기화 처리가 되어있기 때문에 멀티쓰레드환경에서 사용해도 안전하다.
     
     1. FileChannel 생성과 닫기
     
